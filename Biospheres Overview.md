@@ -25,6 +25,10 @@ Notes:
 		 - Controlled by scrubber
 	 - Optimisations:
 		 - Framerate limit, so we don't render more frames than we can display
+		 - Data oriented design, SoA
+		 - Opengl DSA
+		 - Spatial partitioning
+			 - Grid is easier to implement, but if the world is much bigger than the number of cells then it might be better to use octrees
 - Cell physics properties
 	- I'm considering determining cell orientations based on their relative position to genome instead of doing true angular physics, but I'm unsure how well that would work
 - Cell collisions:
@@ -87,6 +91,9 @@ Notes:
 		- Grid and axes for orientation
 	- Cell info:
 		- All properties of the selected cell
+		- Orientation gizmos
+		- Adhesion anchor gizmos
+		- Split plane gizmos 
 - Simulation Control:
 	- Cell count limits
 	- Time:
@@ -103,3 +110,9 @@ Notes:
 		- Editing cell data
 		- Removing cells
 		- Sample cell genome
+## Rendering
+- Debug rendering:
+	- Colored icospheres for cells
+	- Lines for adhesions
+	- Wireframe mode
+- 
