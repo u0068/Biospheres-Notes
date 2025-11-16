@@ -21,17 +21,17 @@ Notes:
 		- Smaller, faster version of [[CPU Simulation]].
 		- Real time update on genome change
 			- CPU Sim target: `2Fr = Simulating 256 cells for 30 ticks in 16ms`
-		 - Using a different number of threads to CPU sim to optimise for low cell count
+		 - Using a different number of threads to CPU sim to optimize for low cell count
 		 - Controlled by scrubber
-	 - Optimisations:
+	 - Optimizations:
 		 - Framerate limit, so we don't render more frames than we can display
 - Cell physics properties
 	- I'm considering determining cell orientations based on their relative position to genome instead of doing true angular physics, but I'm unsure how well that would work
 - Cell collisions:
 	- Cells have soft collisions with each other and the world boundary
 	- Force is proportional to overlap between cells and the cells' cytoskeleton gene
-	- Optimisation: 
-		- Use spatial partitioning to minimise required number of checks
+	- Optimization: 
+		- Use spatial partitioning to minimize required number of checks
 - Cell division:
 	- **DETERMINISTIC ALLOCATION!!!**
 		- Prefix-sum and scatter is a theoretically sound allocator
@@ -55,10 +55,10 @@ Notes:
 	- Flagellocyte
 		- Propels itself forward
 	- All the cell lab cells + our own inventions 
-- Cell signalling
-	- 4 Signalling substances like in cell lab (or maybe more if we want)
-- Cell behaviour
-	- Cells can change their behaviour based on various stimuli, like in cell lab 
+- Cell signaling
+	- 4 Signaling substances like in cell lab (or maybe more if we want)
+- Cell behavior
+	- Cells can change their behavior based on various stimuli, like in cell lab 
 - Genomes:
 	- Many modes
 		- Fixed or dynamic number of modes?
