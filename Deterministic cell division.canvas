@@ -12,8 +12,8 @@
 	],
 	"edges":[
 		{"id":"0cae2f9e4cf74eb0","fromNode":"db3ff1142123bec2","fromSide":"bottom","toNode":"fbce9146041a66d1","toSide":"top","label":"Reserve slots for new cells and adhesions"},
-		{"id":"57a745367f946da3","fromNode":"27579a7d04b41ef0","fromSide":"bottom","toNode":"992037b8a6b24957","toSide":"top","label":"Prefix-sum and scatter"},
-		{"id":"1515354c54ba3bfe","fromNode":"fbce9146041a66d1","fromSide":"bottom","toNode":"e889b9033cb3285e","toSide":"top","label":"Prefix-sum and scatter"},
+		{"id":"57a745367f946da3","fromNode":"27579a7d04b41ef0","fromSide":"bottom","toNode":"992037b8a6b24957","toSide":"top","label":"compaction"},
+		{"id":"1515354c54ba3bfe","fromNode":"fbce9146041a66d1","fromSide":"bottom","toNode":"e889b9033cb3285e","toSide":"top","label":"compaction"},
 		{"id":"f5ef08a98b1476b2","fromNode":"e889b9033cb3285e","fromSide":"bottom","toNode":"f6a5184b902aabfe","toSide":"top"},
 		{"id":"53e00212cc36a465","fromNode":"992037b8a6b24957","fromSide":"bottom","toNode":"f6a5184b902aabfe","toSide":"top"},
 		{"id":"26cdd4c20eaa11cb","fromNode":"f6a5184b902aabfe","fromSide":"bottom","toNode":"9fc986460f9b90c8","toSide":"top"},
