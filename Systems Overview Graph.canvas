@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"446363f9e2458ead","type":"text","text":"GPU Sim","x":125,"y":140,"width":250,"height":60,"color":"2"},
+		{"id":"a9963a08219b6968","type":"text","text":"Simulation","x":-125,"y":-60,"width":250,"height":60},
+		{"id":"478d09ba41b64b27","type":"text","text":"Main Loop","x":-125,"y":-260,"width":250,"height":60},
+		{"id":"35f90e3a4eab6920","type":"text","text":"Poll inputs","x":-125,"y":-160,"width":250,"height":60},
+		{"id":"62996e24df2c5f71","type":"text","text":"This is just a rough example, it will grow and become more detailed once we get a better idea of what we are doing","x":180,"y":-260,"width":250,"height":160},
+		{"id":"6644e55ad3ecbea7","type":"text","text":"Preview Sim","x":-125,"y":140,"width":250,"height":60,"color":"4"},
+		{"id":"a31e9df0a2aaa384","type":"text","text":"Render Simulation (Cells and Wrold)","x":-125,"y":620,"width":250,"height":60},
+		{"id":"6eba85ff74a1fe4b","type":"text","text":"Render UI","x":-125,"y":720,"width":250,"height":60},
+		{"id":"7f2eb588fecf9d0b","x":-525,"y":140,"width":400,"height":400,"type":"file","file":"Remote Notes/CPU Sim Graph.canvas"}
+	],
+	"edges":[
+		{"id":"65c3508f6b32b2e6","fromNode":"a9963a08219b6968","fromSide":"bottom","toNode":"446363f9e2458ead","toSide":"top"},
+		{"id":"fe0d0a2e42065749","fromNode":"446363f9e2458ead","fromSide":"bottom","toNode":"a31e9df0a2aaa384","toSide":"top"},
+		{"id":"18f69d9007a5828b","fromNode":"a31e9df0a2aaa384","fromSide":"bottom","toNode":"6eba85ff74a1fe4b","toSide":"top"},
+		{"id":"44f05e0d3058ac71","fromNode":"a9963a08219b6968","fromSide":"bottom","toNode":"6644e55ad3ecbea7","toSide":"top"},
+		{"id":"138c6d4ca42f676d","fromNode":"6644e55ad3ecbea7","fromSide":"bottom","toNode":"a31e9df0a2aaa384","toSide":"top"},
+		{"id":"679efbe7a47b4244","fromNode":"478d09ba41b64b27","fromSide":"bottom","toNode":"35f90e3a4eab6920","toSide":"top"},
+		{"id":"0e93f81b609e4f1a","fromNode":"35f90e3a4eab6920","fromSide":"bottom","toNode":"a9963a08219b6968","toSide":"top"},
+		{"id":"342ad732e303a233","fromNode":"a9963a08219b6968","fromSide":"bottom","toNode":"7f2eb588fecf9d0b","toSide":"top"},
+		{"id":"c408d3947c2efbf1","fromNode":"7f2eb588fecf9d0b","fromSide":"bottom","toNode":"a31e9df0a2aaa384","toSide":"top"}
+	]
+}
