@@ -1,0 +1,75 @@
+# Design Requirements
+## Simulation
+- Stability
+	- Deterministic
+	- Energy constant or lost
+	- Angular and linear momentum is conserved
+- Performance:
+	- [[GPU Simulation]]: 
+		- Real time performance for huge cell count
+			- Target: 100K cells at >50tps = <0.2us per cell per tick 
+		- Same result as CPU and Preview simulations
+	- [[CPU Simulation]]:
+		- Very fast performance for medium cell count
+			- Target: 10K cells at >50tps = <2us per cell per tick
+	- [[Preview Simulation]]:
+		- Smaller, faster version of [[CPU Simulation]].
+		- Real time update on genome change
+			- CPU Sim target: 2us per cell per tick = Simulating 256 cells for 30 ticks in 16ms
+		 - Using a different number of threads to CPU sim to optimise for low cell count
+		 - Controlled by scrubber
+	 - Optimisations:
+		 - Framerate limit, so we don't render more frames than we can display
+- Cell collisions:
+	- Cells have soft collisions with each other and the world boundary
+	- Force is proportional to overlap between cells and the cells' cytoskeleton gene
+	- Optimisation: 
+		- Use spatial partitioning to minimise required number of checks
+- Cell division:
+	- **DETERMINISTIC ALLOCATION!!!**
+		- Prefix-sum and scatter is a theoretically sound allocator
+	- When the cell is ready to divide (correct split mass/time, cell and adhesion limits not hit) it will divide into 2 daughter cells according to genome.
+- Cell adhesion:
+	- Inheritance
+		- Genome defined, not spatial
+	- 
+- Cell types:
+- 
+- Genomes:
+	- Many modes
+		- Fixed or dynamic size?
+## UI
+- Camera:
+	- Copy blender or unity's camera movement.
+	- WASD for moving through the world
+	- Mouse look
+	- Orbital mode
+	- Panning
+	- Roll
+- Info:
+	- Debug info:
+		- FPS
+		- TPS
+		- Simulation mode
+		- Execution time of various simulation steps
+	- World info:
+		- 3D compass for global orientation
+		- Grid and axes for orientation
+	- Cell info:
+		- All properties of the selected cell
+- Simulation Control:
+	- Cell count limits
+	- Time:
+		- Pause
+		- Physics tickrate is decoupled from rendering framerate
+		- Set target tickrate and framerate, prioritise ticks over frames down to 1FPS
+		- Configurable timestep size
+	- Interaction:
+		- Tool selection UI
+		- Selecting cells using a ray cast
+			- Optimisation: utilise spatial partitioning
+		- Dragging cells
+		- Adding cells
+		- Editing cell data
+		- Removing cells
+		- Sample cell genome
