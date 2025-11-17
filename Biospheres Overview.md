@@ -38,8 +38,8 @@ Notes:
 		- Use spatial partitioning to minimize required number of checks
 - Cell division:
 	- **DETERMINISTIC ALLOCATION!!!**
-		- Prefix-sum and scatter is a theoretically sound allocator
-			- For CPU sim, a single threaded compaction is probably good enough
+		- Prefix-sum and scatter is a theoretically sound allocator for gpu
+		- For CPU sim, a single threaded compaction is probably good enough
 	- When the cell is ready to divide (correct split mass/time, cell and adhesion limits not hit) it will divide into 2 daughter cells according to genome.
 - Cell adhesion:
 	- Inheritance
@@ -72,7 +72,7 @@ Notes:
 			- The issue with dynamic is that the computer can't trivially calculate the position in memory that each genome is stored at
 			- This may be an issue for gpu especially
 ## UI
-- Camera:
+- [[Camera]]:
 	- Copy blender / unity / space engineers camera movement. 
 		- this took me forever to get right so maybe best to copy? the implementation
 		- yeah, camera code is probably gonna be identical regardless of how the simulation works
