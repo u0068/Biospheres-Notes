@@ -73,14 +73,14 @@ Notes:
 			- This may be an issue for gpu especially
 ## UI
 - [[Camera]]:
-	- Copy blender / unity / space engineers camera movement. 
-		- this took me forever to get right so maybe best to copy? the implementation
-		- yeah, camera code is probably gonna be identical regardless of how the simulation works
-	- WASD for moving through the world
-	- Mouse look
-	- Orbital mode
-	- Panning
-	- Roll
+	- Space engineers-like 6DOF camera movement. 
+		- WASD for moving through the world
+		- Mouse look
+		- QE Roll
+	- Blender/unity-like orbital camera option would be nice to have as well
+		- Orbit with mouse look
+		- Panning
+		- Zoom with mouse wheel
 - Info:
 	- Debug info:
 		- FPS
@@ -116,4 +116,5 @@ Notes:
 	- Colored icospheres for cells
 	- Lines for adhesions
 	- Wireframe mode
-- 
+- Fancy cell rendering:
+	- Smooth cell deformation would be peak, but performance cost is questionable
