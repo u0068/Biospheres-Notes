@@ -39,6 +39,7 @@ Notes:
 - Cell division:
 	- **DETERMINISTIC ALLOCATION!!!**
 		- Prefix-sum and scatter is a theoretically sound allocator
+			- For CPU sim, a single threaded compaction is probably good enough
 	- When the cell is ready to divide (correct split mass/time, cell and adhesion limits not hit) it will divide into 2 daughter cells according to genome.
 - Cell adhesion:
 	- Inheritance
