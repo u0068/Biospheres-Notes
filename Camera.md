@@ -16,6 +16,7 @@
 	- Position
 	- Orientation
 	- Orbit distance
+	- Orbit point
 - Controls
 	- Keybinds
 	- Mouse sensitivity
