@@ -1,19 +1,20 @@
 - Learn the contents chapters 2 to 9 of the [rust bible](https://doc.rust-lang.org/book/ch01-00-getting-started.html)
-	- You have max 1 week per chapter (Time pressure so you don't procrastinate, but of course I am happy to extend the deadlines if you need. Understanding >> Speed)
-		- Deadline is whenever I wake up on Sunday each week.
+	- The plan is this: Each week, pick a chapter and aim to finish it by the end of the week.
+		- I'll probably give you a few small programming tasks for each chapter so that you can demonstrate what you have learned.
+			- These tasks will test your understanding of the language, and problem solving skills. For this reason, you will not be allowed to use ai to help you with them. Using other resources is fine.
+		- Deadline is whenever I wake up on Sunday each week, I will be expecting that the homework for that chapter is at least partially done by that point.
 	- Chapter 3 is the most important chapter, its essential that you understand it well.
-		- Its also very dense, so I will can extend your deadline for to 7th of December if you need.
-	- Feel free to do the chapters out of order, and finish chapters before the end of the week, and let me know if you're struggling with anything or if my deadlines are unsuitable.
+		- Its also very dense, so it will likely take more than one week.
+	- Feel free to do the chapters out of order, and finish chapters before the deadline, and let me know if you're struggling with anything or if my deadlines are unsuitable.
 		- Chapter 2 assumes you have prior programming knowledge, so you might prefer to do it after Chapter 3, or refer to other chapters when you study it.
-	- If you can't finish the chapter in a week, I'll give you as many deadline extensions as you need. What matters most is that you understand the parts relevant to the project.
-	- I'll probably give you a few small programming tasks for each chapter so that you can demonstrate what you have learned.
-		- These tasks will test your understanding of the language, and problem solving skills. For this reason, you will not be allowed to use ai to help you with them. Using other resources is fine.
+	- If you can't finish the chapter in a week, thats ok. Take as much time as you need, and ask me if there are parts of it you can skip if youre impatient. What matters most is that you understand the parts relevant to the project.
+		- The deadlines are only there to motivate you
 - Follow a bevy tutorial to at least get a basic understanding of how to use bevy.
 	- Make a *simple* project in rust, with or without bevy **without ai**
 		- Think of something you can stay motivated making. if it helps, think of it as an essential part to making biospheres
 		- You can use ai to explain concepts to you, but the code you write has to be yours, otherwise you wont learn anything
 		- Deadline is end of December
-- add a **simple** feature to biospheres with minimal help from ai
+- Add a *simple* feature to biospheres with minimal help from ai
 	- Doesn't have to be an important essential thing, just something to prove to yourself that you can contribute to the  project on your own
 	- Deadline is end of January
-- use whatever resources you prefer to help you **understand**. ai is fine, but its better (and cheaper) that you learn to use resources other than ai. resources can include asking me to help with the work, or for help finding resources that work for you
+- Use whatever resources you prefer to help you **understand**. ai is fine, but its better (and cheaper) that you learn to use resources other than ai. resources can include asking me to help with the work, or for help finding resources that work for you
