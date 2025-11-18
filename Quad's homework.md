@@ -5,10 +5,10 @@
 		- Deadline is whenever I wake up on Sunday each week, I will be expecting that the homework for that chapter is at least partially done by that point.
 	- Chapter 3 is the most important chapter, its essential that you understand it well.
 		- Its also very dense, so it will likely take more than one week.
-	- Feel free to do the chapters out of order, and finish chapters before the deadline, and let me know if you're struggling with anything or if my deadlines are unsuitable.
+	- Feel free to do the chapters out of order, and finish chapters before the deadline, and let me know if you're struggling with anything or if the deadlines are unsuitable.
 		- Chapter 2 assumes you have prior programming knowledge, so you might prefer to do it after Chapter 3, or refer to other chapters when you study it.
-	- If you can't finish the chapter in a week, thats ok. Take as much time as you need, and ask me if there are parts of it you can skip if youre impatient. What matters most is that you understand the parts relevant to the project.
-		- The deadlines are only there to motivate you
+	- If you can't finish the chapter in a week, thats ok. Take as much time as you need, and ask me if there are parts of it you can skip if you're impatient. What matters most is that you understand the parts relevant to the project.
+		- The deadlines are only there to motivate you.
 - Follow a bevy tutorial to at least get a basic understanding of how to use bevy.
 	- Make a *simple* project in rust, with or without bevy **without ai**
 		- Think of something you can stay motivated making. if it helps, think of it as an essential part to making biospheres
