@@ -9,7 +9,7 @@
 			- You will probably understand all the parts you need in under an hour, so I'm not gonna give it the end of the week deadline.
 		- Chapter 2 assumes you have prior programming knowledge, so you might prefer to do it after Chapter 3, or refer to other chapters when you study it.
 		- Chapter 3 is the most important chapter, its essential that you understand it well.
-			- Its also very dense, so it will likely take more than one week.
+			- Its also very dense, so it may take more than one week.
 		- I recommend that you do chapter 1 first, then chapter 3 in however long it takes, and then chapter 2 and onwards.
 		- Comments (chapter 3.4) will be used extensively throughout the tasks, so learn that first. 
 	- If you can't finish the chapter in a week, thats ok. Take as much time as you need, and ask me if there are parts of it you can skip if you're impatient. What matters most is that you understand the parts relevant to the project.
