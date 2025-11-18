@@ -1,14 +1,20 @@
-- Learn the contents chapters 2 to 9 of the [rust bible](https://doc.rust-lang.org/book/ch01-00-getting-started.html)
+- Learn the contents chapters 1 to 9 of the [rust bible](https://doc.rust-lang.org/book/ch01-00-getting-started.html)
 	- The plan is this: Each week, pick a chapter and aim to finish it by the end of the week.
 		- I'll probably give you a few small programming tasks for each chapter so that you can demonstrate what you have learned.
-			- These tasks will test your understanding of the language, and problem solving skills. For this reason, you will not be allowed to use ai to help you with them. Using other resources is fine.
+			- These tasks will test your understanding of the language, and problem solving skills. For this reason, you will not be allowed to use ai to help you complete them. Using other resources is fine.
 		- Deadline is whenever I wake up on Sunday each week, I will be expecting that the homework for that chapter is at least partially done by that point.
-	- Chapter 3 is the most important chapter, its essential that you understand it well.
-		- Its also very dense, so it will likely take more than one week.
 	- Feel free to do the chapters out of order, and finish chapters before the deadline, and let me know if you're struggling with anything or if the deadlines are unsuitable.
+		- Chapter 1 is very small and rust rover does most of the project relevant stuff for you.
+			- You can skip section 1.1
+			- You will probably understand all the parts you need in under an hour, so I'm not gonna give it the end of the week deadline.
 		- Chapter 2 assumes you have prior programming knowledge, so you might prefer to do it after Chapter 3, or refer to other chapters when you study it.
+		- Chapter 3 is the most important chapter, its essential that you understand it well.
+			- Its also very dense, so it will likely take more than one week.
+		- I recommend that you do chapter 1 first, then chapter 3 in however long it takes, and then chapter 2 and onwards.
+		- Comments (chapter 3.4) will be used extensively throughout the tasks, so learn that first. 
 	- If you can't finish the chapter in a week, thats ok. Take as much time as you need, and ask me if there are parts of it you can skip if you're impatient. What matters most is that you understand the parts relevant to the project.
 		- The deadlines are only there to motivate you.
+	- If you feel like you need more practice tasks, ask me or ai to make suitable tasks for you.
 - Follow a bevy tutorial to at least get a basic understanding of how to use bevy.
 	- Make a *simple* project in rust, with or without bevy **without ai**
 		- Think of something you can stay motivated making. if it helps, think of it as an essential part to making biospheres
