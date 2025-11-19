@@ -8,18 +8,19 @@
 		{"id":"9fc986460f9b90c8","type":"text","text":"Assignments Buffer","x":-192,"y":280,"width":250,"height":60},
 		{"id":"483b333e499d3a2c","type":"text","text":"Add new cells to their assigned free slots","x":-192,"y":380,"width":250,"height":60},
 		{"id":"2831d4bdd8de1752","type":"text","text":"Output cell data","x":-192,"y":480,"width":250,"height":60},
-		{"id":"db3ff1142123bec2","type":"text","text":"Input Cell Data","x":-40,"y":-320,"width":250,"height":60}
+		{"id":"db3ff1142123bec2","type":"text","text":"Input Cell Data","x":-40,"y":-420,"width":250,"height":50}
 	],
 	"edges":[
-		{"id":"0cae2f9e4cf74eb0","fromNode":"db3ff1142123bec2","fromSide":"bottom","toNode":"fbce9146041a66d1","toSide":"top","label":"Reserve slots for new cells and adhesions"},
+		{"id":"0cae2f9e4cf74eb0","fromNode":"db3ff1142123bec2","fromSide":"bottom","toNode":"fbce9146041a66d1","toSide":"top","label":"Reserve slots\n for new cells \nand adhesions"},
 		{"id":"57a745367f946da3","fromNode":"27579a7d04b41ef0","fromSide":"bottom","toNode":"992037b8a6b24957","toSide":"top","label":"compaction"},
 		{"id":"1515354c54ba3bfe","fromNode":"fbce9146041a66d1","fromSide":"bottom","toNode":"e889b9033cb3285e","toSide":"top","label":"compaction"},
 		{"id":"f5ef08a98b1476b2","fromNode":"e889b9033cb3285e","fromSide":"bottom","toNode":"f6a5184b902aabfe","toSide":"top"},
 		{"id":"53e00212cc36a465","fromNode":"992037b8a6b24957","fromSide":"bottom","toNode":"f6a5184b902aabfe","toSide":"top"},
 		{"id":"26cdd4c20eaa11cb","fromNode":"f6a5184b902aabfe","fromSide":"bottom","toNode":"9fc986460f9b90c8","toSide":"top"},
-		{"id":"fcdd27e64f54155a","fromNode":"db3ff1142123bec2","fromSide":"right","toNode":"483b333e499d3a2c","toSide":"right"},
+		{"id":"84a1c2d69d1aa66d","fromNode":"db3ff1142123bec2","fromSide":"bottom","toNode":"27579a7d04b41ef0","toSide":"top","label":"Splitting cells\n free up\n their slots"},
+		{"id":"f2b1daffe6bfcccb","fromNode":"db3ff1142123bec2","fromSide":"left","toNode":"27579a7d04b41ef0","toSide":"top","label":"Slots that were already free"},
+		{"id":"fcdd27e64f54155a","fromNode":"db3ff1142123bec2","fromSide":"right","toNode":"483b333e499d3a2c","toSide":"right","label":"New cells"},
 		{"id":"edafba630fe067f7","fromNode":"9fc986460f9b90c8","fromSide":"bottom","toNode":"483b333e499d3a2c","toSide":"top"},
-		{"id":"496fe01e65e6abeb","fromNode":"483b333e499d3a2c","fromSide":"bottom","toNode":"2831d4bdd8de1752","toSide":"top"},
-		{"id":"84a1c2d69d1aa66d","fromNode":"db3ff1142123bec2","fromSide":"left","toNode":"27579a7d04b41ef0","toSide":"top","label":"Splitting cells free\n up their slots"}
+		{"id":"496fe01e65e6abeb","fromNode":"483b333e499d3a2c","fromSide":"bottom","toNode":"2831d4bdd8de1752","toSide":"top"}
 	]
 }

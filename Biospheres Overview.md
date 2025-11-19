@@ -31,6 +31,7 @@ Notes:
 			 - [ ] Grid is easier to implement, but if the world is much bigger than the number of cells then it might be better to use octrees
 		 - [ ] Backface culling
 		 - [ ] Frustum culling
+		 - [ ] Leverage bevy's renderer for CPU sim
 - [ ] Cell physics properties
 	- [ ] I'm considering determining cell orientations based on their relative position to genome instead of doing true angular physics, but I'm unsure how well that would work
 - [ ] Cell collisions:
