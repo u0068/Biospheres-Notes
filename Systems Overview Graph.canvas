@@ -8,7 +8,7 @@
 		{"id":"6644e55ad3ecbea7","type":"text","text":"Preview Sim","x":-125,"y":140,"width":250,"height":60,"color":"4"},
 		{"id":"6eba85ff74a1fe4b","type":"text","text":"Render UI","x":-125,"y":960,"width":250,"height":60},
 		{"id":"a31e9df0a2aaa384","type":"text","text":"Render Simulation (Cells and World)","x":-125,"y":860,"width":250,"height":60},
-		{"id":"7f2eb588fecf9d0b","type":"file","file":"Biospheres Overview/CPU Sim Graph.canvas","x":-400,"y":340,"width":400,"height":400},
+		{"id":"7f2eb588fecf9d0b","type":"file","file":"Remote Notes/CPU Sim Graph.canvas","x":-400,"y":340,"width":400,"height":400},
 		{"id":"9c1fe56be4b1cac8","type":"text","text":"CPU Sim","x":-375,"y":140,"width":250,"height":60,"color":"5"}
 	],
 	"edges":[

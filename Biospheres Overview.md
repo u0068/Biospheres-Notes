@@ -24,16 +24,28 @@ Notes:
 		 - [ ] Using a different number of threads to CPU sim to optimize for low cell count
 		 - [ ] Controlled by scrubber
 	 - [ ] Optimizations:
-		 - [ ] Framerate limit, so we don't render more frames than we can display
-		 - [ ] Data oriented design, SoA
-		 - [ ] Opengl DSA
-		 - [ ] Spatial partitioning
-			 - [ ] Grid is easier to implement, but if the world is much bigger than the number of cells then it might be better to use octrees
-		 - [ ] Backface culling
-		 - [ ] Frustum culling
-		 - [ ] Leverage bevy's renderer for CPU sim
+		 - Physics
+			 - [ ] Data oriented design, SoA
+			 - [ ] Spatial partitioning
+				 - [ ] Grid is easier to implement, but if the world is much bigger than the number of cells then it might be better to use octrees
+		 - Graphics
+			 - [ ] Framerate limit, so we don't render more frames than we can display
+			 - [ ] Instanced rendering
+				 - [ ] Compact instanced data
+			 - [ ] Backface culling
+			 - [ ] Frustum culling
+			 - [ ] Occlusion culling
+			 - [ ] Cluster/coarse culling
+			 - [ ] GPU driven LOD
+			 - [ ] Front-to-back rendering / Depth pre-pass
+			 - [ ] Sphere impostors instead of full geometry
+				 - [ ] Spherical billboards
+				 - [ ] Point sprites?
+				 - [ ] Raytracing/raymarching?
+					 - In theory intersection test for many spheres in compute shader is simple and performant, especially when using spatial partitioning
+					 - Probably looks best
 - [ ] Cell physics properties
-	- [ ] I'm considering determining cell orientations based on their relative position to genome instead of doing true angular physics, but I'm unsure how well that would work
+	- I'm considering determining cell orientations based on their relative position to genome instead of doing true angular physics, but I'm unsure how well that would work
 - [ ] Cell collisions:
 	- [ ] Cells have soft collisions with each other and the world boundary
 	- [ ] Force is proportional to overlap between cells and the cells' cytoskeleton gene
@@ -46,7 +58,8 @@ Notes:
 	- [ ] When the cell is ready to divide (correct split mass/time, cell and adhesion limits not hit) it will divide into 2 daughter cells according to genome.
 - [ ] Cell adhesion:
 	- [ ] Inheritance
-		- [ ] Genome defined, not spatial
+		- [ ] Genome defined anchors, not spatial
+		- [ ] Settings inherited from parent cell/adhesion
 	- [ ] Physics
 		- [ ] Linear springs
 		- [ ] Angular springs?
@@ -54,15 +67,53 @@ Notes:
 		- [ ] Angular constraints (preferably 'hard stop')
 		- [ ] Break after max force (to avoid trying to compute high forces that cause instability)
 - [ ] Cell types:
-	- [ ] Chronocyte
-		- [ ] Splits after a set time
-	- [ ] Phagocyte
-		- [ ] Eats food to gain biomass
-	- [ ] Photocyte
-		- [ ] Absorbs light to gain biomass
-	- [ ] Flagellocyte
-		- [ ] Propels itself forward
-	- [ ] All the cell lab cells + our own inventions 
+	- All the cell lab cells + our own inventions 
+	- Passive (no special functions to do with signalling):
+		- [ ] Chronocyte
+			- [ ] Splits after a set time
+		- [ ] Phagocyte
+			- [ ] Eats food pellets to gain biomass
+		- [ ] Chemocyte
+			- [ ] Eats food dissolved in environment to gain biomass
+		- [ ] Photocyte
+			- [ ] Absorbs light to gain biomass
+		- [ ] Lipocyte
+			- [ ] Stores extra nutrients as fat
+		- [ ] Nitrocyte
+			- [ ] Generates nitrates
+		- [ ] Glueocyte
+			- [ ] Creates adhesions with cells it contacts
+		- [ ] Devorocyte
+			- [ ] Drains biomass from cells it contacts
+		- [ ] Keratinocyte
+			- [ ] Protects from devorocytes and glueocytes
+	- Active (unique function based on signals it receives):
+		- [ ] Flagellocyte
+			- [ ] Propels itself forward
+		- [ ] Myocyte
+			- [ ] Bends in 2 planes
+			- [ ] Contracts/extends
+			- [ ] Twists
+		- [ ] Secrocyte
+			- [ ] Secretes chemicals into environment
+		- [ ] Stem cell
+			- [ ] Turns itself into another mode
+		- [ ] Neurocyte
+			- [ ] Generates signals based on other signals
+		- [ ] Cilliocyte
+			- [ ] Pushes cells it contacts
+		- [ ] Audiocyte
+			- [ ] Makes sounds based on signals
+	- Sensor (generate signals) based on stimuli:
+		- [ ] Oculocyte
+			- [ ] Senses presence/distance from target in forward direction
+		- [ ] Senseocyte
+			- [ ] Senses presence/distance from target (Signal proportional to distance from a target)
+			- [ ] May be merged with oculocyte due to similar functionality
+		- [ ] Stereocyte
+			- [ ] Outputs signal proportional to relative position of target (local coords)
+		- [ ] Velocity sensor
+			- [ ] Outputs signal proportional to relative velocity of target (local coords)
 - [ ] Cell signaling
 	- [ ] 4 Signaling substances like in cell lab (or maybe more if we want)
 - [ ] Cell behavior
