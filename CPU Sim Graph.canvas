@@ -11,7 +11,7 @@
 		{"id":"66f4e91494967b6c","type":"text","text":"Generate instances","x":-120,"y":800,"width":250,"height":60},
 		{"id":"84af5f8aacc8e60f","type":"text","text":"Render","x":-120,"y":920,"width":250,"height":60},
 		{"id":"58c5eaf68467ed33","type":"text","text":"Output Cell data","x":-120,"y":700,"width":250,"height":60},
-		{"id":"fa947b7c15f2b5c7","type":"file","file":"Remote Notes/Deterministic cell division.canvas","x":-195,"y":240,"width":400,"height":400}
+		{"id":"fa947b7c15f2b5c7","type":"file","file":"Biospheres Notes/Deterministic cell division.canvas","x":-195,"y":240,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"d6e265c32344b99c","fromNode":"ea15145a63f2ba80","fromSide":"bottom","toNode":"798bf1c2e7efb74a","toSide":"top"},
