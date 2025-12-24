@@ -12,58 +12,58 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 
 ### Core Concepts
 
-- [Simulation Modes](#simulation-modes) - Preview, CPU, and GPU simulation configurations
-- [Performance Targets](#performance-targets) - TPS and Fr benchmarks for each mode
-- [Stability Requirements](#stability-requirements) - Determinism, energy conservation, momentum
-- [World Boundaries](#world-boundaries) - Spherical boundary system with soft constraints
+- [[#Simulation Modes]] - Preview, CPU, and GPU simulation configurations
+- [[#Performance Targets]] - TPS and Fr benchmarks for each mode
+- [[#Stability Requirements]] - Determinism, energy conservation, momentum
+- [[#World Boundaries]] - Spherical boundary system with soft constraints
 
 ### Physics Systems
 
-- [Integration Method](#integration-method) - Velocity Verlet at 50 TPS
-- [Cell Collisions](#cell-collisions) - Soft collision system with spatial partitioning
-- [Cell Adhesions](#cell-adhesions) - Spring-damper force system with anchors
-- [Spatial Partitioning](#spatial-partitioning) - Uniform grid for collision detection
-- [Fluid Simulation](#fluid-simulation) - 64³ grid-based fluid dynamics
-- [Two-Way Coupling](#two-way-coupling) - Cell-fluid interaction system
+- [[#Integration Method]] - Velocity Verlet at 50 TPS
+- [[#Cell Collisions]] - Soft collision system with spatial partitioning
+- [[#Cell Adhesions]] - Spring-damper force system with anchors
+- [[#Spatial Partitioning]] - Uniform grid for collision detection
+- [[#Fluid Simulation]] - 64³ grid-based fluid dynamics
+- [[#Two-Way Coupling]] - Cell-fluid interaction system
 
 ### Cell Biology
 
-- [Cell Types](#cell-types) - All available cell specializations
-- [Genome System](#genome-system) - Mode-based differentiation system
-- [Cell Division](#cell-division) - Deterministic allocation and splitting
-- [Energy/Biomass Economy](#energybiomass-economy) - Mass-based resource system
-- [Cell Signaling](#cell-signaling) - 4-substance chemical communication
-- [Sensor Systems](#sensor-systems) - Detection and signal generation
-- [Behavior System](#behavior-system) - Signal-driven cell actions ⚠️
+- [[#Cell Types]] - All available cell specializations
+- [[#Genome System]] - Mode-based differentiation system
+- [[#Cell Division]] - Deterministic allocation and splitting
+- [[#Energy/Biomass Economy]] - Mass-based resource system
+- [[#Cell Signaling]] - 4-substance chemical communication
+- [[#Sensor Systems]] - Detection and signal generation
+- [[#Behavior System]] - Signal-driven cell actions ⚠️
 
 ### Environmental Systems
 
-- [Chemical Diffusion](#chemical-diffusion) - Grid-based chemical transport ⚠️
-- [Food System](#food-system) - Pellet spawning and consumption ⚠️
-- [Light System](#light-system) - Grid-based light field with occlusion ⚠️
-- [Dissolved Nutrients](#dissolved-nutrients) - Chemocyte food source
-- [Gas System](#gas-system) - Dissolved gases in fluid
+- [[#Chemical Diffusion]] - Grid-based chemical transport ⚠️
+- [[#Food System]] - Pellet spawning and consumption ⚠️
+- [[#Light System]] - Grid-based light field with occlusion ⚠️
+- [[#Dissolved Nutrients]] - Chemocyte food source
+- [[#Gas System]] - Dissolved gases in fluid
 
 ### UI/UX Systems
 
-- [Camera System](#camera-system) - 6DOF and orbital camera modes
-- [Genome Editor](#genome-editor) - Visual editor with node graph
-- [Tool System](#tool-system) - Cell interaction tools ⚠️
-- [Genome Hotbar](#genome-hotbar) - Quick-access saved genomes ⚠️
-- [Debug Information](#debug-information) - Performance and world info
+- [[#Camera System]] - 6DOF and orbital camera modes
+- [[#Genome Editor]] - Visual editor with node graph
+- [[#Tool System]] - Cell interaction tools ⚠️
+- [[#Genome Hotbar]] - Quick-access saved genomes ⚠️
+- [[#Debug Information]] - Performance and world info
 
 ### Rendering
 
-- [Rendering Pipeline](#rendering-pipeline) - LOD, culling, and optimization ⚠️
-- [Cell Rendering](#cell-rendering) - Mesh-based and impostor approaches
-- [Adhesion Rendering](#adhesion-rendering) - Line visualization
-- [Debug Rendering](#debug-rendering) - Wireframe and gizmos
+- [[#Rendering Pipeline]] - LOD, culling, and optimization ⚠️
+- [[#Cell Rendering]] - Mesh-based and impostor approaches
+- [[#Adhesion Rendering]] - Line visualization
+- [[#Debug Rendering]] - Wireframe and gizmos
 
 ### Data Management
 
-- [Genome Storage](#genome-storage) - Deduplication and memory layout
-- [Save/Load System](#saveload-system) - Binary saves and genome export
-- [Mutation System](#mutation-system) - Genome variation ⚠️
+- [[#Genome Storage]] - Deduplication and memory layout
+- [[#Save/Load System]] - Binary saves and genome export
+- [[#Mutation System]] - Genome variation ⚠️
 
 **Legend:** ⚠️ = Needs Further Review
 
