@@ -46,7 +46,7 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 
 ### UI/UX Systems
 
-- [[#Camera System]] - 6DOF and orbital camera modes
+- [[Camera]] - 6DOF and orbital camera modes
 - [[#Genome Editor]] - Visual editor with node graph
 - [[#Tool System]] - Cell interaction tools ⚠️
 - [[#Genome Hotbar]] - Quick-access saved genomes ⚠️
@@ -71,7 +71,7 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 
 ## Simulation Modes
 
-### Preview Simulation
+### [[Preview Simulation]]
 
 **Purpose:** Fast, deterministic iteration during genome editing
 
@@ -82,7 +82,7 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 - **Updates:** Real-time on genome changes
 - **Thread Optimization:** Different from CPU sim, optimized for low cell count
 
-### CPU Simulation
+### [[CPU Simulation]]
 
 **Purpose:** Medium-scale simulation with manual control
 
@@ -92,7 +92,7 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 - **Control:** Manual time scrubber only, no automatic progression
 - **Feature Parity:** Same physics as GPU, different optimization strategy
 
-### GPU Simulation
+### [[GPU Simulation]]
 
 **Purpose:** Massive-scale real-time simulation
 
