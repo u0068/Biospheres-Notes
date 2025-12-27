@@ -1,18 +1,34 @@
 {
 	"nodes":[
-		{"id":"4c6da913e3ec4320","type":"text","text":"Genome data","x":20,"y":-380,"width":250,"height":60},
-		{"id":"4f57d5103920dd80","type":"text","text":"Instance buffer","x":-140,"y":-200,"width":250,"height":60},
-		{"id":"d921c79eda23a731","type":"text","text":"Cell data","x":-300,"y":-380,"width":250,"height":60},
-		{"id":"b2b5197362b5ff34","type":"text","text":"Vertex data","x":-140,"y":-40,"width":250,"height":60},
-		{"id":"db9cf358a6b964a5","type":"text","text":"This is pretty much identical for everything we render","x":-140,"y":-500,"width":250,"height":60},
-		{"id":"5adae995c8c33707","type":"text","text":"Stuff that Opengl handles for us","x":-140,"y":120,"width":250,"height":60},
-		{"id":"8ce7474a120c0cae","type":"text","text":"Rendered cells","x":-140,"y":280,"width":250,"height":60}
+		{"id":"group-data","type":"group","x":-600,"y":-200,"width":1360,"height":240,"label":"Data Sources"},
+		{"id":"group-instance","type":"group","x":-200,"y":170,"width":500,"height":200,"label":"Instance Buffer Generation"},
+		{"id":"group-geometry","type":"group","x":-120,"y":520,"width":340,"height":240,"label":"Shared Geometry"},
+		{"id":"group-fragment","type":"group","x":-135,"y":1480,"width":370,"height":220,"label":"Fragment Shader"},
+		{"id":"group-output","type":"group","x":-240,"y":1760,"width":580,"height":140,"label":"Output"},
+		{"id":"group-vertex","type":"group","x":-150,"y":880,"width":400,"height":200,"label":"Vertex Shader"},
+		{"id":"group-raster","type":"group","x":-160,"y":1200,"width":420,"height":140,"label":"Rasterization"},
+		{"id":"title","type":"text","text":"# Cell Rendering Pipeline","x":-400,"y":-400,"width":400,"height":70},
+		{"id":"subtitle","type":"text","text":"Instanced rendering\nShared by all 3 simulation modes","x":50,"y":-400,"width":350,"height":70},
+		{"id":"instance-buffer","type":"text","text":"**Generate Instance Data**\nPer-cell data:\n• Transform matrix (position + rotation + scale)\n• Color (from genome)\n• LOD level\n• Active flag","x":-180,"y":190,"width":440,"height":160},
+		{"id":"icosphere","type":"text","text":"**Icosphere Meshes**\n4 LOD levels loaded once:\n• Subdiv 5: ~5K vertices\n• Subdiv 3: ~320 vertices\n• Subdiv 1: ~42 vertices\n• Billboard: 4 vertices (quad)","x":-100,"y":540,"width":280,"height":180},
+		{"id":"vertex-shader","type":"text","text":"**Per-Vertex Processing**\n• Apply transform matrix to mesh vertex\n• Calculate world position\n• Transform to clip space\n• Pass through normals and UVs","x":-130,"y":900,"width":360,"height":160},
+		{"id":"rasterizer","type":"text","text":"**GPU Rasterization**\nTriangle → Fragments • Depth test • Culling","x":-140,"y":1220,"width":380,"height":100},
+		{"id":"fragment-shader","type":"text","text":"**Per-Pixel Processing**\n• Lighting calculation (Phong or PBR)\n• Normal mapping (optional)\n• Specular highlights\n• Fresnel effects (transparency edge)\n• Output final pixel color","x":-115,"y":1500,"width":320,"height":180},
+		{"id":"output","type":"text","text":"**Rendered Cells**\nThousands of cells rendered with single draw call per LOD level","x":-220,"y":1780,"width":525,"height":100},
+		{"id":"lod","type":"text","text":"**LOD Selection**\nDistance from camera\n4 levels:\n• Subdiv 5 (close)\n• Subdiv 3 (medium)\n• Subdiv 1 (far)\n• Billboard (very far)","x":320,"y":-180,"width":400,"height":190},
+		{"id":"cell-data","type":"text","text":"**Cell Data (SoA)**\nPositions\nRotations\nMasses (for radii)\nGenome refs","x":-560,"y":-165,"width":320,"height":160},
+		{"id":"genome-data","type":"text","text":"**Genome Data**\nColors per mode\nCell type info\nMode parameters","x":-110,"y":-150,"width":320,"height":130}
 	],
 	"edges":[
-		{"id":"fb1a1939a0796238","fromNode":"4c6da913e3ec4320","fromSide":"bottom","toNode":"4f57d5103920dd80","toSide":"top"},
-		{"id":"e3a31e947c388831","fromNode":"d921c79eda23a731","fromSide":"bottom","toNode":"4f57d5103920dd80","toSide":"top"},
-		{"id":"313f9eb04269d0f6","fromNode":"4f57d5103920dd80","fromSide":"bottom","toNode":"b2b5197362b5ff34","toSide":"top","label":"Vertex Shader"},
-		{"id":"58d901b49661cae0","fromNode":"b2b5197362b5ff34","fromSide":"bottom","toNode":"5adae995c8c33707","toSide":"top","label":"Rest of the graphics pipeline"},
-		{"id":"3d6ee7ee084f3ba3","fromNode":"5adae995c8c33707","fromSide":"bottom","toNode":"8ce7474a120c0cae","toSide":"top","label":"Fragment shader"}
+		{"id":"e1","fromNode":"cell-data","fromSide":"right","toNode":"genome-data","toSide":"left"},
+		{"id":"e2","fromNode":"genome-data","fromSide":"right","toNode":"lod","toSide":"left"},
+		{"id":"e3","fromNode":"cell-data","fromSide":"bottom","toNode":"instance-buffer","toSide":"top"},
+		{"id":"e4","fromNode":"genome-data","fromSide":"bottom","toNode":"instance-buffer","toSide":"top"},
+		{"id":"e5","fromNode":"lod","fromSide":"bottom","toNode":"instance-buffer","toSide":"top"},
+		{"id":"e6","fromNode":"instance-buffer","fromSide":"bottom","toNode":"icosphere","toSide":"top"},
+		{"id":"e7","fromNode":"icosphere","fromSide":"bottom","toNode":"vertex-shader","toSide":"top"},
+		{"id":"e8","fromNode":"vertex-shader","fromSide":"bottom","toNode":"rasterizer","toSide":"top"},
+		{"id":"e9","fromNode":"rasterizer","fromSide":"bottom","toNode":"fragment-shader","toSide":"top"},
+		{"id":"e10","fromNode":"fragment-shader","fromSide":"bottom","toNode":"output","toSide":"top"}
 	]
 }
