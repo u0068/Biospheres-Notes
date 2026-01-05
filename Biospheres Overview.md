@@ -80,17 +80,6 @@ Biospheres is a 3D biological simulation game inspired by Cell Lab, featuring ma
 - **Execution:** Single-threaded for perfect determinism
 - **Control:** Manual time scrubber only
 - **Updates:** Real-time on genome changes
-- **Thread Optimization:** Different from CPU sim, optimized for low cell count
-
-### [[CPU Simulation]]
-
-**Purpose:** Medium-scale simulation with manual control
-
-- **Cell Count:** 5K-10K cells
-- **Performance Target:** `10K cells at >50tps = <2Fr`
-- **Execution:** Multi-threaded
-- **Control:** Manual time scrubber only, no automatic progression
-- **Feature Parity:** Same physics as GPU, different optimization strategy
 
 ### [[GPU Simulation]]
 
@@ -227,7 +216,7 @@ if distance > 100.0:
 
 **Potential Solutions:**
 
-- Clamp maximum repulsion force per collision
+- Clamp maximum repulsion force per collision <-- Best solution imo -h
 - Limit maximum overlap distance in calculation
 - Non-linear spring force (e.g., `force = k × tanh(overlap)`)
 - Other approaches TBD
